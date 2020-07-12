@@ -43,5 +43,5 @@ function searchFormInputHeandler(event) {
       .join('');
 
     refs.searchForm.insertAdjacentHTML('beforeend', murkup);
-  });
+  }).catch(error('The connection to the server is lost. Try using the service later.'));
 }
